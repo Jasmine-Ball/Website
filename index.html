@@ -99,6 +99,14 @@ padding-right: 10%;
 table-layout: fixed;
 }
 
+#about {
+display: none;
+}
+
+#articles {
+display: block;
+}
+
 td {
 background: #F1F1F1;
 vertical-align: top;
@@ -130,29 +138,37 @@ vertical-align: top;
 <div id="side-nav">
 
 <a href="http://www.jasmineball.net">Home</a><br/>
-<a href="#">About</a><br/>
+
+<a href="#" onclick="showAboutInfo()">About</a><br/>
+
 <a href="https://github.com/Jasmine-Ball">GitHub</a>
 
 </div>
+
+<section id="about">
+
+<div>
+
+<h1 id="main-heading">About Jasmine</h1>
+
+</div>
+
+<table>
+
+<tr><td><p>Jasmine is a Web and Correspondence Developer from Melbourne, Australia. She enjoys technical projects as well as proofing websites and documentation.
+In her spare time, she also likes to experiment with wild ad-hoc recipes with minimal ingredients.</p></td></tr>
+
+</table>
+
+</section>
+
+<section id="articles">
 
 <div>
 
 <h1 id="main-heading">Short website development tutorials</h1>
 
 </div>
-
-<script>
-
-  function showHideMenu(){
-  	let topMenu = document.getElementById("side-nav");
-	  if (topMenu.style.display != "block"){
-	    topMenu.style.display = "block";
-	  } else {
-	    topMenu.style.display = "none";
-  }
-  }
-  
-</script>
 
 <table>
 
@@ -215,6 +231,29 @@ This could theoretically be uploaded to the internet in it's current format, how
 
 </table>
 
+</section>
+
 </body>
+
+<script>
+
+  function showHideMenu(){
+  	let navMenu = document.getElementById("side-nav");
+	  if (navMenu.style.display != "block"){
+	    navMenu.style.display = "block";
+	  } else {
+	    navMenu.style.display = "none";
+    }
+  }
+  
+  function showAboutInfo(){
+  	let about = document.getElementById("about");
+	let articles = document.getElementById("articles");
+	about.style.display = "block";
+	articles.style.display = "none";
+    
+  }
+    
+</script>
 
 </html>
