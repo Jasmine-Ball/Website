@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 
+<!-- Written by Jasmine Ball 21/3/2020 -->
+
 <html>
-<!--Written by Jasmine Ball 21/3/2020-->
+
 <head>
+
 <title>
+
 Jasmine Ball | Web and Correspondence Developer
+
 </title>
+
 </head>
 
 <style>
+
 body {
 padding-top: 0%;
 background: hsl(55,30%,95%);
 background-image: url('images/book.jpg');
 background-size: 100%;
 font-family: Courier;
-
 }
 
 div {
@@ -31,7 +37,6 @@ color: hsl(55,20%,98%);
 height: 50px;
 background: hsl(0,0%,90%);
 width: 100%;
-
 }
 
 #top-logo {
@@ -109,26 +114,35 @@ color: #333333;
 p {
 vertical-align: top;
 }
+
 </style>
+
 <body>
 
 <nav id="top-nav">
+
 <img id="top-logo" src ="http://www.jasmineball.net/images/jb.jpg">
+
 <img id="top-menu-button" src ="http://www.jasmineball.net/images/jb_menu.png" onclick="showHideMenu()">
 
 </nav>
+
 <div id="side-nav">
+
 <a href="http://www.jasmineball.net">Home</a><br/>
 <a href="#">About</a><br/>
 <a href="https://github.com/Jasmine-Ball">GitHub</a>
+
 </div>
 
 <div>
+
 <h1 id="main-heading">Short website development tutorials</h1>
+
 </div>
 
-
 <script>
+
   function showHideMenu(){
   	let topMenu = document.getElementById("side-nav");
 	  if (topMenu.style.display != "block"){
@@ -137,24 +151,35 @@ vertical-align: top;
 	    topMenu.style.display = "none";
   }
   }
+  
 </script>
+
 <table>
 
 <tr>
-<!-- Left paragraph heading -->
+
+<!-- Left paragraph heading: -->
+
 <th>Creating a simple web page: intro</th>
 
-<!-- Right paragraph heading -->
+<!-- Right paragraph heading: -->
+
 <th>Storing your code in GitHub: intro</th>
+
 </tr>
 
-<!-- Left text column -->
+<!-- Left text column: -->
+
 <tr>
+
 <td>
+
 <p>Web pages can be created entirely by writing 'code' into a file. Try the following: </p>
 
-<!-- Numbered list of steps -->
+<!-- Numbered list of steps: -->
+
 <ol>
+
 <li>Open a text editor such as Notepad or TextEdit </li>
 <li>At the top of your page, type these characters: <span id="hcode">&nbsp;&lt;HTML&gt;&nbsp;</span></li>
 <li>Type in some information that you'd like to have on your web page, such as your life story</li>
@@ -163,12 +188,16 @@ vertical-align: top;
 <li>Close the text editor</li>
 <li>Navigate to where you just saved the file, and click on the file to open it </li></ol>
 
-<!-- Left conclusion block -->
+<!-- Left conclusion block: -->
+
 <p>You should now see your web page, complete with the words you added.
 This could theoretically be uploaded to the internet in it's current format, however there is still some more 'code' required in order for it to look presentable. The code will mostly consist of 'tags', similar to the <span id="hcode">&nbsp;&lt;HTML&gt;&nbsp;</span> code that you already created. I intend to make a video tutorial about this in the future.</p></td>
 
-<!-- Right text column -->
-<td><p>Many web developers keep the code for their web pages stored in a place called GitHub.</p>
+<!-- Right text column: -->
+
+<td>
+
+<p>Many web developers keep the code for their web pages stored in a place called GitHub.</p>
 
 <p>GitHub (and similar Git websites such as Bitbucket) offer free accounts, and one of the best things about them is being able to compare your current web page code to any older versions.</p>
 
@@ -178,8 +207,14 @@ This could theoretically be uploaded to the internet in it's current format, how
 
 <p>Once the software is installed, you can edit and update your web page code without needing to open a web browser. Updating your code in this way is often done via your computer's terminal or command-prompt. I intend to make a video tutorial about this in the future.
 
-</p></td>
+</p>
+
+</td>
+
 </tr>
+
 </table>
+
 </body>
+
 </html>
