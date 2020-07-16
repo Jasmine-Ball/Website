@@ -130,11 +130,20 @@ vertical-align: top;
 @media only screen and (max-width: 500px) {
 
   #main-heading {
-  font-size: 30px;
+  font-size: 28px;
+  }
+  
+  .rh-col {
+  width: 0%;
+  display: none;
   }
   
   table {
-  top: 180px;
+  top: 160px;
+  }
+  
+  th {
+  font-size: 20px;
   }
   
 }
@@ -193,11 +202,11 @@ In her spare time, she also likes to experiment with wild ad-hoc recipes with mi
 
 <!-- Left paragraph heading: -->
 
-<th>Creating a simple web page: intro</th>
+<th class="lh-col">Creating a simple web page: intro</th>
 
 <!-- Right paragraph heading: -->
 
-<th>Storing your code in GitHub: intro</th>
+<th class="rh-col">Storing your code in GitHub: intro</th>
 
 </tr>
 
@@ -205,7 +214,7 @@ In her spare time, she also likes to experiment with wild ad-hoc recipes with mi
 
 <tr>
 
-<td>
+<td class="lh-col">
 
 <p>Web pages can be created entirely by writing 'code' into a file. Try the following: </p>
 
@@ -228,7 +237,7 @@ This could theoretically be uploaded to the internet in it's current format, how
 
 <!-- Right text column: -->
 
-<td>
+<td class="rh-col">
 
 <p>Many web developers keep the code for their web pages stored in a place called GitHub.</p>
 
