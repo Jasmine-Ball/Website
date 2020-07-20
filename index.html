@@ -14,8 +14,6 @@ Jasmine Ball | Web and Correspondence Developer
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-
 <style>
 
 body {
@@ -148,8 +146,9 @@ vertical-align: top;
   
 }
 
-
 </style>
+
+</head>
 
 <body>
 
@@ -179,10 +178,18 @@ vertical-align: top;
 
 </div>
 
-<table>
+<table id="about-table">
 
-<tr><td><p>Jasmine is a Web and Correspondence Developer from Melbourne, Australia. She enjoys technical projects as well as proofing websites and documentation.
-In her spare time, she also likes to experiment with wild ad-hoc recipes with minimal ingredients.</p></td></tr>
+<tr>
+
+<td>
+
+<p>Jasmine is a Web and Correspondence Developer from Melbourne, Australia. She enjoys technical projects as well as proofing websites and documentation. </p>
+<p>In her spare time, she also likes to experiment with wild ad-hoc recipes with minimal ingredients, as well as ponder about inventions and philosophy. </p>
+
+</td>
+
+</tr>
 
 </table>
 
@@ -223,17 +230,24 @@ In her spare time, she also likes to experiment with wild ad-hoc recipes with mi
 <ol>
 
 <li>Open a text editor such as Notepad or TextEdit </li>
+
 <li>At the top of your page, type these characters: <span id="hcode">&nbsp;&lt;html&gt;&nbsp;</span></li>
+
 <li>Type in some information that you'd like to have on your web page, such as your life story</li>
+
 <li>At the end of your text, after the full-stop, type these characters: <span id="hcode">&nbsp;&lt;/html&gt;&nbsp;</span></li>
+
 <li>Save the file, selecting the 'html' file format, and take notice of where you are saving the new file to</li>
+
 <li>Close the text editor</li>
+
 <li>Navigate to where you just saved the file, and click on the file to open it </li></ol>
 
 <!-- Left conclusion block: -->
 
-<p>You should now see your web page, complete with the words you added.
-This could theoretically be uploaded to the internet in it's current format, however there is still some more 'code' required in order for it to look presentable. The code will mostly consist of 'tags', similar to the <span id="hcode">&nbsp;&lt;html&gt;&nbsp;</span> code that you already created. See the video tutorial <a href="https://youtu.be/2lhmiFMX7oc">here</a>.</p></td>
+<p>You should now see your web page, complete with the words you added. This could theoretically be uploaded to the internet in it's current format, however there is still some more 'code' required in order for it to look presentable. The code will mostly consist of 'tags', similar to the <span id="hcode">&nbsp;&lt;html&gt;&nbsp;</span> code that you already created. See the video tutorial <a href="https://youtu.be/2lhmiFMX7oc">here</a>.</p>
+
+</td>
 
 <!-- Right text column: -->
 
@@ -259,9 +273,7 @@ This could theoretically be uploaded to the internet in it's current format, how
 
 </section>
 
-</body>
-
-<script>
+<script type="text/javascript">
 
   function showHideMenu(){
   	let navMenu = document.getElementById("side-nav");
@@ -273,13 +285,17 @@ This could theoretically be uploaded to the internet in it's current format, how
   }
   
   function showAboutInfo(){
+	let aboutTable = document.getElementById("about-table");
   	let about = document.getElementById("about");
 	let articles = document.getElementById("articles");
+	aboutTable.style.top = "80px";
 	about.style.display = "block";
 	articles.style.display = "none";
     
   }
     
 </script>
+
+</body>
 
 </html>
