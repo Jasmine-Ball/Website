@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin-top : 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-image: url('images/city.jpg');
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+    margin: 5px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.top-menu-buttons {
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.icon-top {
+    width: 20px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.left-top {
+    grid-area: lefttop;
+    background: rgba(59, 59, 59, 0.05);
+}
+
+.top-bar-l {
+    grid-area: topbarl;
+    min-width: 200px;
+    height: 52px;
+    text-align: left;
+    background: rgba(59, 59, 59, 0.05);
+}
+
+.bar-items {
+    position: relative;
+    height: 20px;
+    top: 30%;
+    bottom: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top-bar-r {
+    grid-area: topbarr;
+    min-width: 200px;
+    height: 52px;
+    text-align: right;
+    background: rgba(59, 59, 59, 0.05);
+}
+
+.right-top {
+    grid-area: righttop;
+    background: rgba(59, 59, 59, 0.05);
+}
+
+.table-general {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-main {
+    grid-area: bodymain;
+    min-height: 100px;
+}
+
+.panel {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.body-low {
+    grid-area: bodylow;
+    padding: 50px;
+    min-height: max-content;
+}
+
+.icon-media {
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'lefttop topbarl topbarr righttop'
+    'bodymain bodymain bodymain bodymain'
+    'bodylow bodylow bodylow bodylow'
+    'footer footer footer footer';
+}
+
+@media only screen and (max-width: 960px) {
+
+
+
+    body {
+      background-size: 800px;
+    }
+
+    .panel {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+  }
