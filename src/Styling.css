@@ -8,7 +8,7 @@
 
 body {
     background-image: url('images/city.jpg');
-    background-size: 100%;
+    background-size: 800px;
 }
 
 h1 {
@@ -83,9 +83,9 @@ img {
 }
 
 .panel {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .body-low {
@@ -114,18 +114,18 @@ img {
     'footer footer footer footer';
 }
 
-@media only screen and (max-width: 960px) {
-
+@media only screen and (min-width: 960px) {
 
 
     body {
-      background-size: 800px;
+        background-image: url('images/city.jpg');
+        background-size: 100%;
+    }
+    .panel {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
-    .panel {
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
     
   }
