@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 * {
-    margin-top : 0%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
 
 body {
-    background-image: url('images/city.jpg');
+    background-image: url('static/media/city.jpg');
     background-size: 800px;
 }
 
@@ -44,7 +46,6 @@ img {
 
 .top-bar-l {
     grid-area: top-bar-l;
-    min-width: 200px;
     height: 52px;
     text-align: left;
     background: rgba(59, 59, 59, 0.05);
@@ -61,7 +62,6 @@ img {
 
 .top-bar-r {
     grid-area: top-bar-r;
-    min-width: 200px;
     height: 52px;
     text-align: right;
     background: rgba(59, 59, 59, 0.05);
@@ -114,12 +114,17 @@ img {
     'footer footer footer footer';
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 640px) {
 
 
     body {
         background-size: 100%;
     }
+
+    .top-bar-l, .top-bar-r {
+        min-width: 250px;
+    }
+
     .panel {
         width: 60%;
         margin-left: 20%;
