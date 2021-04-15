@@ -38,12 +38,12 @@ img {
 }
 
 .left-top {
-    grid-area: lefttop;
+    grid-area: left-top;
     background: rgba(59, 59, 59, 0.05);
 }
 
 .top-bar-l {
-    grid-area: topbarl;
+    grid-area: top-bar-l;
     min-width: 200px;
     height: 52px;
     text-align: left;
@@ -60,7 +60,7 @@ img {
 }
 
 .top-bar-r {
-    grid-area: topbarr;
+    grid-area: top-bar-r;
     min-width: 200px;
     height: 52px;
     text-align: right;
@@ -68,7 +68,7 @@ img {
 }
 
 .right-top {
-    grid-area: righttop;
+    grid-area: right-top;
     background: rgba(59, 59, 59, 0.05);
 }
 
@@ -78,7 +78,7 @@ img {
 }
 
 .body-main {
-    grid-area: bodymain;
+    grid-area: body-main;
     min-height: 100px;
 }
 
@@ -89,7 +89,7 @@ img {
 }
 
 .body-low {
-    grid-area: bodylow;
+    grid-area: body-low;
     padding: 50px;
     min-height: max-content;
 }
@@ -108,9 +108,9 @@ img {
 .grid-container {
     display: grid;
     grid-template-areas: 
-    'lefttop topbarl topbarr righttop'
-    'bodymain bodymain bodymain bodymain'
-    'bodylow bodylow bodylow bodylow'
+    'left-top top-bar-l top-bar-r right-top'
+    'body-main body-main body-main body-main'
+    'body-low body-low body-low body-low'
     'footer footer footer footer';
 }
 
@@ -118,7 +118,6 @@ img {
 
 
     body {
-        background-image: url('images/city.jpg');
         background-size: 100%;
     }
     .panel {
