@@ -101,6 +101,11 @@ img {
     border-spacing: 10px;
 }
 
+.anchor-none {
+    text-decoration: none;
+    color:indigo;
+}
+
 .footer {
     grid-area: footer;
 }

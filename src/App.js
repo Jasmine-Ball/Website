@@ -15,7 +15,7 @@ function Grid() {
 
   const About = () => {
     const about = <table class="table-general"><p>Jasmine is a Web and Correspondence Developer from Melbourne, Australia. She enjoys technical projects as well as proofing websites and documentation. </p>
-    <p>In her spare time, she also likes to experiment with wild ad-hoc recipes with minimal ingredients, as well as ponder about inventions and philosophy. </p></table>;
+    <p>In her spare time, she also likes to experiment with wild ad-hoc recipes with minimal ingredients, as well as ponder about inventions and philosophy. Email Jasmine at <a class="anchor-none" href="mailto:jasmine@jasmineball.net">jasmine@jasmineball.net</a>.</p></table>;
     const home = <table class="table-general"><p>Web development with a focus on usability and simplicity.</p></table>
     if (show == 1)
     return(about);
