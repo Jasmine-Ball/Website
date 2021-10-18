@@ -6,8 +6,8 @@ const mysql = require('mysql');
 const port = process.env.PORT || 3000;
 const con = mysql.createConnection({
     host: 'server244.web-hosting.com',
-    user: 'jasmxfvl_db_web',
-    password: 'bl@ck100', // Will set this up properly
+    user: '', // Change to current details
+    password: '', // // Change to current details
     database: 'jasmxfvl_analytics'
 });
 
