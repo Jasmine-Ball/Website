@@ -1,14 +1,14 @@
-// Basic proof of concept working as of 17/10/2021
+// Basic proof of concept working as of 18/10/2021
 // Jasmine-Ball
 
 const http = require('http');
 const mysql = require('mysql');
 const port = process.env.PORT || 3000;
 const con = mysql.createConnection({
-    host: 'server244.web-hosting.com',
-    user: '', // Change to current details
-    password: '', // // Change to current details
-    database: 'jasmxfvl_analytics'
+    host: /**/,
+    user: /**/,
+    password: /**/,
+    database: /**/
 });
 
 function last(displ) {
