@@ -1,6 +1,6 @@
 // Basic proof of concept working as of 18/10/2021
 // Jasmine-Ball
-
+var body = "Check DB";
 const http = require('http');
 const mysql = require('mysql');
 const port = process.env.PORT || 3000;
@@ -13,15 +13,15 @@ const con = mysql.createConnection({
 
 function last(displ) {
     const handler = (req, res) => {
-res.end("Welcome. this is our latest topic: " + displ);
 };
-const server = http.createServer(handler);
+
 server.listen(port, err => {
 if (err) {
     console.error(err);
 }
 else {
     console.error(`Server listening on port ${port}`);
+    body = displ;
 }
 
 });  
@@ -41,3 +41,13 @@ con.connect(function(err) {
 };
 
 qy();
+
+const server = http.createServer(function(req, res) {
+res.setHeader('Content-type', 'application/json');
+res.setHeader('Access-Control-Allow-Origin', '*');
+res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
+res.setHeader('Access-Control-Allow-Methods', '*');
+res.setHeader('Access-Control-Allow-Headers', 'message');
+res.writeHead(200);
+res.end(JSON.stringify({"id": body}));
+});
