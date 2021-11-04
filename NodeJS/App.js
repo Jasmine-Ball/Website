@@ -29,10 +29,11 @@ else {
 function qy() {
 con.connect(function(err) {
     if (err) throw err;
-    con.query("SELECT Body FROM articles WHERE Body LIKE 'St%' LIMIT 1", function (err, result, fields)
+    con.query("SELECT * FROM articles", function (err, result, fields)
 {
     if (err) throw err;
-    const displ = result[0].Body;
+    //const displ = result[0].Body + result[1].Body;
+    const displ = result;
     last(displ);
     });
 });
@@ -47,5 +48,5 @@ res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
 res.setHeader('Access-Control-Allow-Methods', '*');
 res.setHeader('Access-Control-Allow-Headers', 'message');
 res.writeHead(200);
-res.end(JSON.stringify({"id": body}));
+res.end(JSON.stringify(body));
 });
