@@ -15,11 +15,22 @@ const FetchAPI = () => {
         getBody();
     }, []);
 
-    return (
-        <>
-        {body.id}
-        </>
-    );
+	return (
+
+    <>
+    {body.map((x) => {
+    return(
+      <>
+      {x.Heading}
+      {x.Body}
+      {x.URL}
+      </>
+    )
+    })
+    }
+	</>
+
+  );
 };
 
 export default FetchAPI;
