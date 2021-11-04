@@ -1,4 +1,4 @@
-// Basic proof of concept working as of 18/10/2021
+// Basic proof of concept working as of 4/11/2021
 // Jasmine-Ball
 var body = "Check DB";
 const http = require('http');
@@ -12,8 +12,6 @@ const con = mysql.createConnection({
 });
 
 function last(displ) {
-    const handler = (req, res) => {
-};
 
 server.listen(port, err => {
 if (err) {
